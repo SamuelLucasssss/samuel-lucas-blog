@@ -1,5 +1,15 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "buildCommand": "npm run build",
-  "installCommand": "npm install"
+  "installCommand": "npm install",
+  "outputDirectory": "public",
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/sobre", "destination": "/sobre.html" },
+    { "source": "/artigos", "destination": "/artigos.html" },
+    { "source": "/projetos", "destination": "/projetos.html" },
+    { "source": "/contato", "destination": "/contato.html" },
+    { "source": "/artigos/ia-reduzir-desperdicios-clinicas-oncologicas", "destination": "/artigo-ia-oncologia.html" }
+  ]
 }
